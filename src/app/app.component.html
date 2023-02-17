@@ -1,1 +1,13 @@
-<router-outlet></router-outlet>
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Ex. Pizza" [value]="result">
+  </mat-form-field>
+</form>
+
+
+<div *ngFor="let valueList of datasource">
+  <button mat-fab extended *ngFor="let value of valueList" (click)="onClickButton(value)">
+    {{value}}
+  </button>
+</div>

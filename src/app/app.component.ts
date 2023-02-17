@@ -5,5 +5,19 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'calculator';
+
+  datasource = [
+    ['1', '2', '3', '4'],
+    ['5', '6', '7', '8'],
+    ['9', '*', '/', '()'],
+    ['=', '+', '-']
+  ]
+
+  result = '';
+
+
+  onClickButton(value: string) {
+    this.result += value;
+  }
+
 }
