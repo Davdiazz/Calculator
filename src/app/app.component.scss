@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.row-container {
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.custom-buttom {
+  margin-left: 5px;
+  width: 100px;
+  height: 100px;
+  font-size: xx-large;
+}
+
+.custom-buttom-equals {
+  width: 205px;
+}
+
+.custom-input-result {
+  margin-left: 5px;
+  width: 405px;
+  height: 80px;
+}

@@ -1,13 +1,31 @@
-<form class="example-form">
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Ex. Pizza" [value]="result">
-  </mat-form-field>
-</form>
+<div class="container">
 
+  <div class="row-container">
+    <input class="custom-input-result" matInput>
+  </div>
 
-<div *ngFor="let valueList of datasource">
-  <button mat-fab extended *ngFor="let value of valueList" (click)="onClickButton(value)">
-    {{value}}
-  </button>
+  <div class="row-container">
+    <button class="custom-buttom" mat-raised-button color="primary">1</button>
+    <button class="custom-buttom" mat-raised-button color="primary">2</button>
+    <button class="custom-buttom" mat-raised-button color="primary">3</button>
+    <button class="custom-buttom" mat-raised-button color="primary">4</button>
+  </div>
+  <div class="row-container">
+    <button class="custom-buttom" mat-raised-button color="primary">5</button>
+    <button class="custom-buttom" mat-raised-button color="primary">6</button>
+    <button class="custom-buttom" mat-raised-button color="primary">7</button>
+    <button class="custom-buttom" mat-raised-button color="primary">8</button>
+  </div>
+  <div class="row-container">
+    <button class="custom-buttom" mat-raised-button color="primary">9</button>
+    <button class="custom-buttom" mat-raised-button color="primary">0</button>
+    <button class="custom-buttom" mat-raised-button color="primary">*</button>
+    <button class="custom-buttom" mat-raised-button color="primary">/</button>
+  </div>
+  <div class="row-container">
+    <button class="custom-buttom custom-buttom-equals" mat-raised-button color="primary">=</button>
+    <button class="custom-buttom" mat-raised-button color="primary">+</button>
+    <button class="custom-buttom" mat-raised-button color="primary">-</button>
+  </div>
+
 </div>
